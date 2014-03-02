@@ -1,5 +1,5 @@
 /*
-	Prologue 1.2 by HTML5 UP
+	Tessellate 1.0 by HTML5 UP
 	html5up.net | @n33co
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
@@ -8,36 +8,41 @@
 /* Basic                                                                         */
 /*********************************************************************************/
 
-	body,input,textarea,select
+	header, footer, h2, h3, h4, h5, h6
 	{
-		font-size: 16pt;
+		text-align: center;
 	}
+	
+		header > p
+		{
+			text-align: center;
+		}
 
-	.container
-	{
-		padding: 0 2em 0 2em;
-	}
+	/* Sections/Articles */
+
+		section,
+		article,
+		.row > section,
+		.row > article
+		{
+			margin: 0 0 2.5em 0 !important;
+		}
+	
+	/* Tables */
+	
+		.table-wrapper
+		{
+			width: 100%;
+			overflow-x: scroll;
+			padding-left: 1px;
+			-webkit-overflow-scrolling: touch;
+		}
 
 	/* Lists */
 
-		ul.icons
+		ul.actions
 		{
-		}	
-		
-			ul.icons li
-			{
-			}
-
-			ul.icons li a
-			{
-				width: 1.75em;
-			}
-
-	/* Item */
-	
-		.item
-		{
-			margin-bottom: 20px;
+			text-align: center;
 		}
 
 /*********************************************************************************/
@@ -46,64 +51,74 @@
 
 	#header
 	{
-		width: 20%;
-	}
-
-	#logo
-	{
+		margin: 0 !important;
+		padding: 8em 2em 8em 2em;
 	}
 	
-		#logo .image
-		{
-			position: relative;
-			margin: 0 0 0.5em 0;
-		}
-
-	#nav
-	{
-	}
-	
-		#nav ul
+		#header header
 		{
 		}
 		
-			#nav ul li
+			#header header p
 			{
+				margin-top: 1em;
 			}
-			
-				#nav ul li a
-				{
-					font-size: 0.8em;
-					padding-top: 0.5em;
-					padding-bottom: 0.5em;
-				}
-				
-					#nav ul li a span
-					{
-						padding-right: 2.25em;
-					}
-					
-						#nav ul li a span:before
-						{
-							left: 100%;
-							margin-left: -1.25em;
-							line-height: 2.25em;
-						}
 
+		#header footer
+		{
+			padding-top: 1.25em;
+		}
+	
+/*********************************************************************************/
+/* Main Sections                                                                 */
+/*********************************************************************************/
+
+	.main
+	{
+		margin: 0 !important;
+	}
+	
+		.main > header
+		{
+			padding: 3.5em 2em 3.5em 2em;
+		}
+
+			.main > header h2
+			{
+				font-size: 1.85em;
+			}
+
+			.main > header br
+			{
+				display: none;
+			}
+
+			.main > header p
+			{
+				margin: 1.5em 0 0 0;
+			}
+
+		.main > .content
+		{
+			padding: 3.5em 20px 3.5em 20px;
+		}
+		
+			.main > .content > .container > :last-child
+			{
+				margin-bottom: 0 !important;
+			}
+		
 /*********************************************************************************/
 /* Footer                                                                        */
 /*********************************************************************************/
 
 	#footer
 	{
-		margin-left: 20%;
+		margin: 0 !important;
+		padding: 3em 0 3em 0;
 	}
-
-/*********************************************************************************/
-/* Main                                                                          */
-/*********************************************************************************/
-
-	#main
-	{
-		margin-left: 20%;
-	}
+	
+		#footer .copyright
+		{
+			margin-top: 2em;
+		}

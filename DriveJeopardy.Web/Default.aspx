@@ -69,11 +69,11 @@
                 goToPage('H');
             });
 
-            $("#menuGoToA").click(function () {
-                //  goToPage('A');
-                window.location.href = "/DidYouKnow/index.html";
+            //$("#menuGoToA").click(function () {
+            //    //  goToPage('A');
+            //   // window.location.href = "/DidYouKnow/index.html";
 
-            });
+            //});
             $("#menuGoToB").click(function () {
                 goToPage('B');
             });
@@ -104,7 +104,7 @@
                 }
             }
         }
-       
+
     </script>
 </head>
 <body class="metro">
@@ -115,13 +115,16 @@
             <table border="0" style="width: 100%">
                 <tr>
                     <td>
-                        <div id="menuGoToA" class="tile  bg-cyan" style="width: 100%">
+                        <a href="DidYouKnow/index.html">
+                            <div id="menuGoToA" class="tile  bg-cyan" style="width: 100%">
 
-                            <div class="brand bg-black">
-                                <span class="label fg-white">Did you know</span>
-                                <%-- <div class="badge bg-darkRed paused"></div>--%>
+                                <div class="brand bg-black">
+                                    <span class="label fg-white">Did you know</span>
+                                    <div class="badge bg-darkRed "></div>
+                                </div>
                             </div>
-                        </div>
+
+                        </a>
                     </td>
                 </tr>
                 <tr>
@@ -135,17 +138,17 @@
                         </div>
                     </td>
                 </tr>
-                <tr>
+                <%--<tr>
                     <td>
                         <div id="menuGoToC" class="tile double bg-crimson" data-click="transform" style="width: 100%">
 
                             <div class="brand bg-black">
                                 <span class="label fg-white">Risk</span>
-                                <%-- <div class="badge bg-darkRed paused"></div>--%>
+                              
                             </div>
                         </div>
                     </td>
-                </tr>
+                </tr>--%>
             </table>
 
         </div>
@@ -155,7 +158,7 @@
            <input type="submit" id="goHome" class="button goHome" value="Home" />
         </div>
         <div id="sectionB">
-           b
+            b
             
             <input type="submit" id="goHome" class="button goHome" value="Home" />
         </div>

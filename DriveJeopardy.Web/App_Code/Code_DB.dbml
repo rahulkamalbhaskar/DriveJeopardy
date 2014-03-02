@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="CODE_NCDB" Class="Code_DBDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=70.72.172.229;Initial Catalog=CODE_NCDB;Persist Security Info=True;User ID=sa" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="CODE_NCDBConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.mainTable" Member="mainTables">
+    <Type Name="mainTable">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="C_YEAR" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="C_MNTH" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="C_WDAY" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="C_HOUR" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="C_SEV" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="C_VEHS" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="C_CONF" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="C_RCFG" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="C_WTHR" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="C_RSUR" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="C_RALN" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="C_TRAF" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="V_ID" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="V_TYPE" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="V_YEAR" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="P_ID" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="P_SEX" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="P_AGE" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="P_PSN" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="P_ISEV" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="P_SAFE" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="P_USER" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Function Name="dbo.getFatalityDataForPsition" Method="getFatalityDataForPsition">
+    <ElementType Name="getFatalityDataForPsitionResult">
+      <Column Name="Position" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="PositionCount" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.getNoInjuryDataForPsition" Method="getNoInjuryDataForPsition">
+    <ElementType Name="getNoInjuryDataForPsitionResult">
+      <Column Name="Position" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="PositionCount" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.getInjuryDataForPsition" Method="getInjuryDataForPsition">
+    <ElementType Name="getInjuryDataForPsitionResult">
+      <Column Name="Position" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="PositionCount" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+</Database>

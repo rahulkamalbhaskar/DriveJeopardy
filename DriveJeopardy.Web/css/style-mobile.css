@@ -1,5 +1,5 @@
 /*
-	Prologue 1.2 by HTML5 UP
+	Tessellate 1.0 by HTML5 UP
 	html5up.net | @n33co
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
@@ -10,52 +10,100 @@
 
 	body,input,textarea,select
 	{
-		font-size: 14pt;
+		font-size: 11pt;
 	}
 
-	h2
-	{
-		font-size: 1.5em;
-		letter-spacing: 0;
-		font-weight: 300;
-	}
+	/* Sections/Articles */
 
-	.container
-	{
-		padding: 0 15px 0 15px;
-	}
-
-	.image.featured
-	{
-		position: relative;
-		min-height: 10em;
-		overflow: hidden;
-	}
-	
-		.image.featured img
+		section,
+		article,
+		.row > section,
+		.row > article
 		{
-			position: relative;
-			height: 10em;
-			width: auto;
-			/*
-				Stuff below is automatically calculated using JS. It sucks, but there
-				doesn't appear to be a way to center the <img> inside its parent with
-				pure CSS (since we don't know its width).
-			
-				left: 0;
-				margin-left: 0;
-			*/
+			margin: 0 0 1.5em 0 !important;
 		}
 
+	/* Buttons */
+
+		.button
+		{
+			padding-left: 0;
+			padding-right: 0;
+			width: 100%;
+			max-width: 300px;
+		}
+
+	/* Lists */
+
+		ul.icons
+		{
+		}	
+		
+			ul.icons li
+			{
+				padding-left: 0.35em;
+			}
+
+		ul.actions
+		{
+		}
+
+			ul.actions li
+			{
+				display: block;
+				margin: 1em 0 1em 0;
+			}
+	
+		ul.menu
+		{
+		}
+
+			ul.menu li
+			{
+				border: 0;
+				padding: 0;
+				display: block;
+				margin: 1em 0 1em 0;
+			}
+	
 /*********************************************************************************/
-/* Main                                                                          */
+/* Header                                                                        */
 /*********************************************************************************/
 
-	#main
+	#header
+	{
+		padding: 6em 20px 6em 20px;
+	}
+	
+		#header > header
+		{
+			padding: 0 1em 0 1em;
+		}
+	
+/*********************************************************************************/
+/* Main Sections                                                                 */
+/*********************************************************************************/
+
+	.main
 	{
 	}
 	
-		#main > section
+		.main > header
 		{
-			padding: 2em 0 2em 0;
+			padding: 3em 20px 3em 20px;
 		}
+
+			.main > header h2
+			{
+				font-size: 1.5em;
+			}
+
+		.main > .content
+		{
+			padding: 3em 20px 3em 20px;
+		}
+
+			.main > .content h3
+			{
+				font-size: 1.25em;
+			}
